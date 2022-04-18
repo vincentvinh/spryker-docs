@@ -4,7 +4,7 @@ description: This document describes how a marketplace operator works in the Bac
 template: concept-topic-template
 ---
 
-A *marketplace operator* is a company that owns the marketplace. In a marketplace business model, one or more of such a company's employees represent a marketplace operator and manage the store. We call such users as [marketplace administrators](/docs/marketplace/user/intro-to-spryker-marketplace/marketplace-personas.html#marketplace-administrator). Depending on the marketplace model, the marketplace operator either manages only other merchants' orders or also sells products as a [main merchant](/docs/marketplace/user/features/{{site.version}}/marketplace-merchant-feature-overview/main-merchant-concept.html)).  
+A *marketplace operator* is a company that owns the marketplace. In a marketplace business model, one or more of such a company's employees represent a marketplace operator and manage the store. We call such users as [marketplace administrators](/docs/marketplace/user/intro-to-spryker-marketplace/marketplace-personas.html#marketplace-administrator). Depending on the marketplace model, the marketplace operator either manages only other merchants' orders or also sells products as a [main merchant](/docs/marketplace/user/features/{{site.version}}/marketplace-merchant-feature-overview/main-merchant-concept.html).  
 
 ## Merchant management
 
@@ -45,8 +45,8 @@ For detailed instructions on managing orders, see [Managing marketplace orders](
 
 As a part of order management, a marketplace administrator helps merchants manage marketplace order returns. In the **Marketplace&nbsp;<span aria-label="and then">></span> Returns** section of the Back Office, a marketplace administrator manages marketplace order returns as follows:
 
-* Sets marketplace return states
-* Prints marketplace return slips
+* Sets marketplace return states.
+* Prints marketplace return slips.
 
 For detailed instructions on managing returns, see [Managing marketplace returns](/docs/marketplace/user/back-office-user-guides/{{site.version}}/sales/managing-marketplace-returns.html).
 
