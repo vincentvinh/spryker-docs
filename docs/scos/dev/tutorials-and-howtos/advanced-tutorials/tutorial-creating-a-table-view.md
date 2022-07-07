@@ -36,7 +36,7 @@ You have created a new [module](/docs/scos/dev/back-end-development/extending-sp
 
 Create the `ProductTable` class under the `src/Pyz/Zed/HelloWorld/Communication/Table` folder:
 
-**Code sample**
+<details><summary markdown='span'>Code sample</summary>
 
 ```php
 <?php
@@ -101,6 +101,8 @@ class ProductTable extends AbstractTable
     }
 }
 ```
+
+</details>
 
 ## Create a factory
 

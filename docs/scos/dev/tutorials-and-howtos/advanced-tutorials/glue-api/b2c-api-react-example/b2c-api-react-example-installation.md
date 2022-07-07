@@ -216,5 +216,5 @@ npm run dist
 npm run serve:local
 ```
 
-9. Check that the example application is available at the following URL: `http://react.local`
+9. Check that the example application is available at the following URL: `http://react.local`.
 10. To stop the app, press <kbd>Ctrl+C</kbd>. To start it again, run `npm run serve:local`.

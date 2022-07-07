@@ -37,7 +37,6 @@ In international business, it is important to fine-tune a shop's behavior accord
 * Availability of payment methods / payment provider
 * Order Processing
 * Format of time &amp; number
-* …
 
 At the same time, the product import from a PIM system cart calculation and the product structure is identical in all stores. Spryker offers full support to allow localization of the content from its web pages; this is done in an optimized manner that brings speed in rendering the web content.
 

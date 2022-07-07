@@ -99,7 +99,7 @@ Create the template file that was added to your widget's `getTemplate()` method 
 {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
 ```
 
-In the template of the widget, the parameters are accessible through the `_widget` twig variable. This way in twig template it's easy to determine where a parameter is coming from.
+In the template of the widget, the parameters are accessible through the `_widget` twig variable. This way in Twig template it's easy to determine where a parameter is coming from.
 
 {% info_block infoBox %}
 
@@ -251,11 +251,11 @@ The following twig functions can be used to hook widgets in any twig template:
 
 In the same module, you will create an interface that represents the widget used in the template. This step is important to make Dependency Inversion visible on PHP level in the caller module.
 
-Create the interface for the widget and define the `initialize()` method. This method is a must have, it defines the contract of a widget plugin—for example, input.
+Create the interface for the widget and define the `initialize()` method. This method is a must-have, it defines the contract of a widget plugin—for example, input.
 
 The inputs of the widget plugins are usually different, that's why the `initialize()` method has to be defined for each case individually. When calling the `widget()`, `widgetBlock()` and `widgetGlobal()` twig functions, the `initialize()` method of the widget plugin will be executed internally, thus the system by design makes sure that the required inputs are passed.
 
-In the following example the `initialize()` method defines one mandatory and one optional parameter. Also note that the interface defines the `NAME` constant. It's value is used in step 1 to identify and render the right widget.
+In the following example the `initialize()` method defines one mandatory and one optional parameter. Also, note that the interface defines the `NAME` constant. Its value is used in step 1 to identify and render the right widget.
 
 **src/Pyz/Yves/MyPage/Dependency/Plugin/MyWidget/MyWidgetPluginInterface.php**
 
@@ -284,9 +284,9 @@ interface MyWidgetPluginInterface extends WidgetPluginInterface
 
 In the target widget module (MyWidget in the examples), you can implement the widget plugin. Extend your plugin from `\Spryker\Yves\Kernel\Widget\AbstractWidgetPlugin` and implement the following methods:
 
-* `getName()` - returns the name of the widget as it's used in the template. Most cases you can return `static::NAME;` in the method when the name is defined in the interface.
-* `getTemplate()` - returns the template file path to renter the widget.
-* `initialize()` - initializes the rendering of the widget template, by processing the input parameters and providing parameters for the template to be rendered. Also, sub-widgets can be registered here.
+* `getName()`—returns the name of the widget as it's used in the template. Most cases you can return `static::NAME;` in the method when the name is defined in the interface.
+* `getTemplate()`—returns the template file path to renter the widget.
+* `initialize()`—initializes the rendering of the widget template, by processing the input parameters and providing parameters for the template to be rendered. Also, sub-widgets can be registered here.
 
 {% info_block infoBox "Info" %}
 
@@ -355,11 +355,11 @@ Create the template file that was added to your Widget's `getTemplate()` method 
 {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
 ```
 
-In the widget template, the parameters are accessible through the `_widget` twig variable. This way in twig template it's easy to determine where a parameter is coming from. When you see `_widget.foo`, it means that the `foo` parameter is coming from the widget directly.
+In the widget template, the parameters are accessible through the `_widget` twig variable. This way in a Twig template it's easy to determine where a parameter is coming from. When you see `_widget.foo`, it means that the `foo` parameter is coming from the widget directly.
 
 ### 5. Activate the widget
 
-There are three ways of activating a widget, depending on their scope where they need to be rendered:
+There are three ways of activating a widget, depending on the scope where they need to be rendered:
 
 * [Activate a widget in a Controller action](/docs/scos/dev/tutorials-and-howtos/advanced-tutorials/tutorial-implementing-widgets-and-widget-plugins.html#activate-a-widget-in-a-controller-action)
 * [Activate a widget in another widget](/docs/scos/dev/tutorials-and-howtos/advanced-tutorials/tutorial-implementing-widgets-and-widget-plugins.html#activate-a-widget-in-another-widget)
@@ -367,9 +367,9 @@ There are three ways of activating a widget, depending on their scope where they
 
 ### Activate a widget in a controller action
 
-Most of the times when a Page needs extension, we need to extend a template that is rendered by a `Controller` action. In this case, the action need to return the `\Spryker\Yves\Kernel\View\View` object.
+Most of the time when `Page` needs an extension, we need to extend a template that is rendered by a `Controller` action. In this case, the action needs to return the `\Spryker\Yves\Kernel\View\View` object.
 
-This View object can define the data for the template of the controller to be rendered, the list of active widget plugins, and the template to render.
+This `View` object can define the data for the template of the controller to be rendered, the list of active widget plugins, and the template to render.
 
 ```php
 <?php
@@ -409,7 +409,7 @@ class FooController extends AbstractController
 
 {% info_block infoBox "Info" %}
 
-When a controller action returns a View object, in the rendered twig template by default the data passed from the controller (view data) is accessible through the `_view` twig variable. This way in twig template it's easy to determine where a parameter is coming from. When you see `_view.foo`, it means that the `foo` parameter is coming from the controller directly.
+When a controller action returns a View object, in the rendered twig template by default the data passed from the controller (view data) is accessible through the `_view` twig variable. This way in a Twig template it's easy to determine where a parameter is coming from. When you see `_view.foo`, it means that the `foo` parameter is coming from the controller directly.
 If you would like to access the parameters directly without the `_view` variable in twig, set the `ShopApplicationConfig::useViewParametersToRenderTwig()` module configuration method to return `true` instead of the default `false`.
 
 ```php
@@ -505,9 +505,9 @@ class ProductSetDetailPageDependencyProvider extends AbstractBundleDependencyPro
 
 ### Activate a widget in another widget
 
-In the same cases, it's necessary to extend widgets with other sub-widgets. The concept of nesting widgets in each other is the same as they were used in a Page, the only difference is how they are activated. You can activate sub-widgets in the `initialize()` method of any widget.
+In the same cases, it's necessary to extend widgets with other sub-widgets. The concept of nesting widgets in each other is the same as they were used in a `Page`, the only difference is how they are activated. You can activate sub-widgets in the `initialize()` method of any widget.
 
-Those widgets that were activated in a controller are not available in other widgets. Every rendered Page and Widget have their own scope of twig variables and available widgets.
+Those widgets that were activated in a controller are not available in other widgets. Every rendered `Page` and `Widget` has their own scope of twig variables and available widgets.
 
 ```php
 <?php

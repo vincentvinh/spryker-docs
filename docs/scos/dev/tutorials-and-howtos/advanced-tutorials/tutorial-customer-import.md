@@ -206,7 +206,7 @@ class CustomerInstallerPlugin extends AbstractPlugin implements InstallerPluginI
 
 ## Register the new data installer plugin
 
-Now, we’re almost ready to test the new data installer; we just need to register it in `InstallerDependencyProvider`:
+To test the new data installer, register it in `InstallerDependencyProvider`:
 
 ```php
 <?php
@@ -230,4 +230,4 @@ To test the customer data installer, run the data install from the command line:
 vendor/bin/console setup:init-db
 ```
 
-That's it! The new customer data installer is up and running.
+The new customer data installer is up and running.
