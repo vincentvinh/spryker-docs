@@ -45,6 +45,11 @@
 .icon-copy:before {
   content: "\e916";
 }
+.icon-copy:after {
+  content: " Copy";
+  font-family: monospace;
+  font-size: 1rem;
+}
 .icon-warning:before {
   content: "\e914";
 }

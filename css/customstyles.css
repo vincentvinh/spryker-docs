@@ -1,44 +1,69 @@
-.gi-2x{font-size: 2em;}
-.gi-3x{font-size: 3em;}
-.gi-4x{font-size: 4em;}
-.gi-5x{font-size: 5em;}
+.gi-2x {
+    font-size: 2em;
+}
 
-.breadcrumb > .active {color: #777 !important;}
+.gi-3x {
+    font-size: 3em;
+}
+
+.gi-4x {
+    font-size: 4em;
+}
+
+.gi-5x {
+    font-size: 5em;
+}
+
+.breadcrumb>.active {
+    color: #777 !important;
+}
 
 /* make room for the nav bar */
 
-.post-content ol li, .post-content ul li {
+.post-content ol li,
+.post-content ul li {
     margin: 10px 0px;
 }
 
 .pageSummary {
-    font-size:13px;
-    display:block;
-    margin-bottom:15px;
-    padding-left:20px;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 20px;
 }
 
 .post-summary {
-    margin-bottom:12px;
+    margin-bottom: 12px;
 }
 
 p.external a {
-    text-align:right;
-    font-size:12px;
+    text-align: right;
+    font-size: 12px;
     color: #0088cc;
-    display:inline;
+    display: inline;
 }
 
 #definition-box-container div a.active {
     font-weight: bold;
 }
-p.post-meta {font-size: 80%; color: #777;}
 
-.entry-date{font-size:14px;font-size:0.875rem;line-height:1.71429;margin-bottom:0;text-transform:uppercase;}
+p.post-meta {
+    font-size: 80%;
+    color: #777;
+}
+
+.entry-date {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.71429;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
 
 .filter-options {
     margin-bottom: 20px;
 }
+
 .filter-options button {
     margin: 3px;
 }
@@ -60,7 +85,8 @@ li.dropdownActive a {
     font-size: 12px;
 }
 
-a.accordion-toggle, a.accordion-collapsed {
+a.accordion-toggle,
+a.accordion-collapsed {
     font-size: 14px;
     text-decoration: none;
 }
@@ -75,12 +101,12 @@ img.screenshotSmall {
 }
 
 dl dt p {
-    margin-left:20px;
+    margin-left: 20px;
 }
 
 dl dd {
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 dl.dl-horizontal dd {
@@ -88,10 +114,10 @@ dl.dl-horizontal dd {
 }
 
 figcaption {
-    padding-bottom:12px;
-    padding-top:6px;
+    padding-bottom: 12px;
+    padding-top: 6px;
     max-width: 90%;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     font-style: italic;
     color: gray;
 }
@@ -107,18 +133,19 @@ figcaption {
 .audienceLabel {
     margin: 10px;
     float: right;
-    border:1px solid #dedede;
-    padding:7px;
+    border: 1px solid #dedede;
+    padding: 7px;
 }
 
 .prefaceAudienceLabel {
     color: gray;
     text-align: center;
-    margin:5px;
+    margin: 5px;
 }
+
 span.myLabel {
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 button.cursorNorm {
@@ -128,7 +155,7 @@ button.cursorNorm {
 hr.faded {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 hr.shaded {
@@ -139,11 +166,25 @@ hr.shaded {
     margin-bottom: 10px;
 }
 
-.fa-6x{font-size:900%;}
-.fa-7x{font-size:1100%;}
-.fa-8x{font-size:1300%;}
-.fa-9x{font-size:1500%;}
-.fa-10x{font-size:1700%;}
+.fa-6x {
+    font-size: 900%;
+}
+
+.fa-7x {
+    font-size: 1100%;
+}
+
+.fa-8x {
+    font-size: 1300%;
+}
+
+.fa-9x {
+    font-size: 1500%;
+}
+
+.fa-10x {
+    font-size: 1700%;
+}
 
 i.border {
     padding: 10px 20px;
@@ -151,9 +192,9 @@ i.border {
 }
 
 .summary {
-    font-size:120%;
+    font-size: 120%;
     color: #808080;
-    margin:20px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
     border-left: 5px solid #ED1951;
     padding-left: 10px;
 }
@@ -168,21 +209,31 @@ a.fa.fa-envelope-o.mailto {
     font-weight: 600;
 }
 
-.alert, .callout {
+.alert,
+.callout {
     overflow: hidden;
 }
 
-ol li ol li {list-style-type: lower-alpha;}
-ol li ul li {list-style-type: disc;}
+ol li ol li {
+    list-style-type: lower-alpha;
+}
 
-li img {clear:both; }
+ol li ul li {
+    list-style-type: disc;
+}
+
+li img {
+    clear: both;
+}
 
 .tab-content {
     padding: 15px;
     background-color: #FAFAFA;
 }
 
-span.tagTitle {font-weight: 500;}
+span.tagTitle {
+    font-weight: 500;
+}
 
 li.activeSeries {
     font-weight: bold;
@@ -191,22 +242,26 @@ li.activeSeries {
 .seriesContext .dropdown-menu li.active {
     font-weight: bold;
     margin-left: 43px;
-    font-size:18px;
+    font-size: 18px;
 }
 
 .alert-warning {
     color: #444;
 }
 
-div.alert code, h2 code {
+div.alert code,
+h2 code {
     background-color: transparent !important;
 }
+
 /* without this, the links in these notes aren't visible.*/
 .alert a {
     text-decoration: underline;
 }
 
-div.tags {padding: 10px 5px;}
+div.tags {
+    padding: 10px 5px;
+}
 
 .tabLabel {
     font-weight: normal;
@@ -226,7 +281,8 @@ span.otherProgrammingLanguages {
     font-style: normal;
 }
 
-.seriesNext, .seriesContext {
+.seriesNext,
+.seriesContext {
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -258,19 +314,24 @@ ol.series li {
     font-family: courier;
     color: silver;
     color: #444;
-    display:block;
+    display: block;
 }
 
-span.muted {color: #666;}
+span.muted {
+    color: #666;
+}
 
 .highlight .err {
     color: #a61717;
     background-color: transparent !important;
 }
 
-pre, table code {
-    white-space: pre-wrap;       /* css-3 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+pre,
+table code {
+    white-space: pre-wrap;
+    /* css-3 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
 }
 
 pre {
@@ -291,26 +352,40 @@ video {
     border: 1px solid #c0c0c0;
 }
 
-p.required, p.dataType {display: block; color: #c0c0c0; font-size: 80%; margin-left:4px;}
+p.required,
+p.dataType {
+    display: block;
+    color: #c0c0c0;
+    font-size: 80%;
+    margin-left: 4px;
+}
 
-dd {margin-left:20px;}
+dd {
+    margin-left: 20px;
+}
 
 .post-content img.inline {
-    margin:0px;
-    margin-bottom:6px;
+    margin: 0px;
+    margin-bottom: 6px;
 }
+
 .panel-heading {
     font-weight: bold;
 }
 
-.note code, .alert code, .warning code, h2 code, h3 code, h4 code {
+.note code,
+.alert code,
+.warning code,
+h2 code,
+h3 code,
+h4 code {
     color: inherit;
     padding: 0px;
 }
 
 .alert {
-    margin-bottom:10px;
-    margin-top:10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 a.accordion-toggle {
@@ -323,8 +398,8 @@ span.red {
 }
 
 h3.codeExplanation {
-    font-size:18px;
-    font-style:normal;
+    font-size: 18px;
+    font-style: normal;
     color: black;
     line-height: 24px;
 }
@@ -349,11 +424,11 @@ span.soft {
 
 .videoThumbs img {
     float: left;
-    margin:15px 15px 15px 0px;
+    margin: 15px 15px 15px 0px;
     border: 1px solid #dedede;
 }
 
-*:hover > .anchorjs-link {
+*:hover>.anchorjs-link {
     transition: color .25s linear;
     text-decoration: none;
 }
@@ -361,11 +436,12 @@ span.soft {
 .kbCaption {
     color: white;
     background-color: #444;
-    padding:10px;
+    padding: 10px;
 }
 
 /* this part adds an icon after external links, using FontAwesome*/
-a[href^="http://"]:after, a[href^="https://"]:after {
+a[href^="http://"]:after,
+a[href^="https://"]:after {
     content: "\f08e";
     font-family: FontAwesome;
     font-weight: normal;
@@ -380,9 +456,8 @@ a[href^="http://"]:after, a[href^="https://"]:after {
 
 /* Strip the outbound icon when this class is present */
 a[href].noCrossRef::after,
-a.no_icon:after
- {
-    content:"" !important;
+a.no_icon:after {
+    content: "" !important;
     padding-left: 0;
 }
 
@@ -390,7 +465,7 @@ ol li ul li ol li {
     list-style: decimal;
 }
 
-ol li ul li ol li ul li{
+ol li ul li ol li ul li {
     list-style: disc;
 }
 
@@ -420,7 +495,7 @@ ol li ul li ol li ul li{
 
 #userMap .active {
     background-color: #d6f5d6;
-    border:1px solid #555;
+    border: 1px solid #555;
     font-weight: bold;
 }
 
@@ -430,7 +505,7 @@ h2.userMapTitle {
 
 #userMap a:hover {
     text-decoration: none;
-  }
+}
 
 div.arrow {
     max-width: 50px;
@@ -439,7 +514,8 @@ div.arrow {
     font-size: 20px;
 }
 
-#userMap div.arrow, #userMap div.content {
+#userMap div.arrow,
+#userMap div.content {
     float: left;
 }
 
@@ -453,7 +529,7 @@ div.arrow {
 }
 
 .box1 {
-    margin-left:0px;
+    margin-left: 0px;
 }
 
 button.btn.btn-default.btn-lg.modalButton1 {

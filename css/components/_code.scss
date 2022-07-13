@@ -19,6 +19,8 @@ pre {
     code {
         display: block;
         width: 100%;
+        color: inherit;
+        background: inherit;
     }
 
     .c { color: #D8D8AE; font-style: italic } /* Comment */
@@ -91,8 +93,8 @@ pre {
     padding: 3px 14px;
     margin: 1em 0 0;
 
-    & + .highlight,
-    & + pre {
+    &+.highlight,
+    &+pre {
         margin-top: 0;
     }
 }
@@ -133,9 +135,11 @@ pre {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -150,4 +154,10 @@ table {
         padding: 2px 8px;
         font-size: 14px;
     }
+}
+
+code {
+    color: $grey-dark;
+    background: $grey-bg-code;
+    padding: 0.1rem 0.3rem;
 }

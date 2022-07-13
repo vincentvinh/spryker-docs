@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 .post-content {
     width: calc(100% - #{$sidebarsWidthDesktop});
 
@@ -20,56 +24,74 @@
     }
 
     h1 {
-        font-size: 38px;
+        font-size: 3rem;
         line-height: 1.369;
 
         @include media("<tablet") {
-            font-size: 28px;
+            font-size: 2.375rem;
         }
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 2.375rem;
 
         @include media("<tablet") {
-            font-size: 20px;
+            font-size: 1.75rem;
             line-height: 1.4;
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem;
         }
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 1.75rem;
 
         @include media("<tablet") {
-            font-size: 16px;
-            margin-bottom: 8px;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
         }
     }
 
     h4 {
-        font-size: 18px;
+        font-size: 1.25rem;
 
         @include media("<tablet") {
-            font-size: 15px;
-            margin-bottom: 8px;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    h5 {
+        font-size: 1rem;
+
+        @include media("<tablet") {
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    h6 {
+        font-size: 0.875rem;
+
+        @include media("<tablet") {
+            font-size: 0.5rem;
+            margin-bottom: 0.5rem;
         }
     }
 
     table {
         max-width: 100%;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         border: 0;
         border-radius: 4px;
         text-align: left;
         color: $grey-8;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.5;
         font-weight: 500;
 
         @include media("<tablet") {
-            margin: 0 0 8px;
+            margin: 0 0 0.5rem;
             display: block;
             border: 1px solid $grey-3;
         }
@@ -152,8 +174,8 @@
     }
 
     caption {
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         text-align: left;
     }
 
@@ -192,7 +214,7 @@
 
     th,
     td {
-        padding: 10px 15px;
+        padding: 0.5rem 1rem;
         hyphens: auto;
         min-width: 100px;
         border: 0;
@@ -203,13 +225,13 @@
 
         @include media("<tablet") {
             display: block;
-            padding: 8px 15px;
+            padding: 0.5rem 1rem;
         }
     }
 
     th {
         color: $white;
-        font-size: 13px;
+        font-size: 0.875rem;
         font-weight: 600;
         background: $grey;
         text-transform: uppercase;
@@ -230,7 +252,7 @@
             padding-left: 40%;
             border-bottom: 1px solid $grey-3;
             overflow: hidden;
-            min-height: 45px;
+            min-height: 3rem;
         }
 
         &::before {
@@ -238,9 +260,9 @@
                 content: attr(data-th-text);
                 float: left;
                 width: 65%;
-                margin: 7px 0 0 -66.666%;
-                font-size: 11px;
-                line-height: 14px;
+                margin: 0.5rem 0 0 -66.666%;
+                font-size: 0.7rem;
+                line-height: 1rem;
                 font-weight: 800;
                 color: $black;
             }
@@ -248,14 +270,14 @@
     }
 
     details {
-        margin: 0 0 24px;
+        margin: 0 0 1.5rem;
         border: 2px solid $grey-lighten;
         background: $grey-lightest;
         border-radius: 4px;
         position: relative;
 
         & + details {
-            margin-top: -22px;
+            margin-top: -1.5rem;
         }
 
         summary {
