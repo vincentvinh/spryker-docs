@@ -1,6 +1,6 @@
 ---
 title: Prices feature overview
-description: In the article, you can find the price definition, its types, how the price is inherited and calculated.
+description: In the document, you can find the price definition, its types, how the price is inherited and calculated.
 last_updated: Jul 9, 2021
 template: concept-topic-template
 originalLink: https://documentation.spryker.com/2021080/docs/prices-overview

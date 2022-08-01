@@ -13,7 +13,7 @@ redirect_from:
   - /docs/scos/user/features/202200.0/packaging-units-feature-overview.html
 ---
 
-{% info_block infoBox "Terminology used throughout the article" %}
+{% info_block infoBox "Terminology used throughout the document" %}
 
 | DEFINITION | DESCRIPTION |
 |---|---|
