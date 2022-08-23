@@ -151,7 +151,7 @@ class ExampleTwigExtensionPlugin extends AbstractTwigExtensionPlugin
                     return $this->getService()->getConvertedPrice($price);
                 },
                 ['is_safe' => ['html']]
-            );
+            )
         ];
     }
 }
